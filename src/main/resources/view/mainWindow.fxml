@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="450.0" prefWidth="350.0" styleClass="root" stylesheets="/style/mainWindowStyle.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainController">
+   <children>
+      <Pane layoutX="7.0" layoutY="135.0" prefHeight="308.0" prefWidth="336.0" styleClass="mainPane" AnchorPane.leftAnchor="7.0" AnchorPane.rightAnchor="7.0">
+         <children>
+            <GridPane layoutX="6.0" layoutY="5.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="297.0" prefWidth="325.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0">
+                </ColumnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Button fx:id="buttonEquals" focusTraversable="false" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#buttonEqualsOnAction" stylesheets="/style/mainWindowStyle.css" text="=" GridPane.columnIndex="3" GridPane.rowIndex="4">
+                     <GridPane.margin>
+                        <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                     </GridPane.margin>
+                     <styleClass>
+                        <String fx:value="buttonAllCalc" />
+                        <String fx:value="buttonExternal" />
+                     </styleClass>
+                     <font>
+                        <Font name="Times New Roman Italic" size="25.0" />
+                     </font></Button>
+                  <Button fx:id="buttonClearAll" focusTraversable="false" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#buttonClearAllOnAction" stylesheets="/style/mainWindowStyle.css" text="C">
+                     <GridPane.margin>
+                        <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                     </GridPane.margin>
+                     <styleClass>
+                        <String fx:value="buttonAllCalc" />
+                        <String fx:value="buttonExternal" />
+                     </styleClass>
+                     <font>
+                        <Font name="Times New Roman Italic" size="25.0" />
+                     </font></Button>
+                  <Button fx:id="buttonDivision" focusTraversable="false" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#buttonDivisionOnAction" stylesheets="/style/mainWindowStyle.css" text="÷" GridPane.columnIndex="1">
+                     <GridPane.margin>
+                        <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                     </GridPane.margin>
+                     <styleClass>
+                        <String fx:value="buttonAllCalc" />
+                        <String fx:value="buttonExternal" />
+                     </styleClass>
+                     <font>
+                        <Font name="Times New Roman Italic" size="25.0" />
+                     </font></Button>
+                  <Button fx:id="buttonMultiply" focusTraversable="false" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#buttonMultiplyOnAction" stylesheets="/style/mainWindowStyle.css" text="×" GridPane.columnIndex="2">
+                     <GridPane.margin>
+                        <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                     </GridPane.margin>
+                     <styleClass>
+                        <String fx:value="buttonAllCalc" />
+                        <String fx:value="buttonExternal" />
+                     </styleClass>
+                     <font>
+                        <Font name="Times New Roman Italic" size="25.0" />
+                     </font></Button>
+                  <Button fx:id="buttonClearOneSymbol" focusTraversable="false" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#buttonClearOneSymbolOnAction" stylesheets="/style/mainWindowStyle.css" text="⌫" GridPane.columnIndex="3">
+                     <GridPane.margin>
+                        <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                     </GridPane.margin>
+                     <styleClass>
+                        <String fx:value="buttonAllCalc" />
+                        <String fx:value="buttonExternal" />
+                     </styleClass>
+                     <font>
+                        <Font name="Times New Roman Italic" size="25.0" />
+                     </font></Button>
+                  <Button fx:id="buttonNumber7" focusTraversable="false" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#buttonNumber7_OnAction" stylesheets="/style/mainWindowStyle.css" text="7" GridPane.rowIndex="1">
+                     <GridPane.margin>
+                        <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                     </GridPane.margin>
+                     <styleClass>
+                        <String fx:value="buttonAllCalc" />
+                        <String fx:value="buttonInternal" />
+                     </styleClass>
+                     <font>
+                        <Font name="Times New Roman Italic" size="25.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="buttonNumber8" focusTraversable="false" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#buttonNumber8_OnAction" stylesheets="/style/mainWindowStyle.css" text="8" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <GridPane.margin>
+                        <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                     </GridPane.margin>
+                     <styleClass>
+                        <String fx:value="buttonAllCalc" />
+                        <String fx:value="buttonInternal" />
+                     </styleClass>
+                     <font>
+                        <Font name="Times New Roman Italic" size="25.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="buttonNumber9" focusTraversable="false" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#buttonNumber9_OnAction" stylesheets="/style/mainWindowStyle.css" text="9" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                     <GridPane.margin>
+                        <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                     </GridPane.margin>
+                     <styleClass>
+                        <String fx:value="buttonAllCalc" />
+                        <String fx:value="buttonInternal" />
+                     </styleClass>
+                     <font>
+                        <Font name="Times New Roman Italic" size="25.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="buttonSub" focusTraversable="false" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#buttonSubOnAction" stylesheets="/style/mainWindowStyle.css" text="-" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                     <GridPane.margin>
+                        <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                     </GridPane.margin>
+                     <styleClass>
+                        <String fx:value="buttonAllCalc" />
+                        <String fx:value="buttonExternal" />
+                     </styleClass>
+                     <font>
+                        <Font name="Times New Roman Italic" size="25.0" />
+                     </font></Button>
+                  <Button fx:id="buttonNumber4" focusTraversable="false" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#buttonNumber4_OnAction" stylesheets="/style/mainWindowStyle.css" text="4" GridPane.rowIndex="2">
+                     <GridPane.margin>
+                        <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                     </GridPane.margin>
+                     <styleClass>
+                        <String fx:value="buttonAllCalc" />
+                        <String fx:value="buttonInternal" />
+                     </styleClass>
+                     <font>
+                        <Font name="Times New Roman Italic" size="25.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="buttonNumber5" focusTraversable="false" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#buttonNumber5_OnAction" stylesheets="/style/mainWindowStyle.css" text="5" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <GridPane.margin>
+                        <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                     </GridPane.margin>
+                     <styleClass>
+                        <String fx:value="buttonAllCalc" />
+                        <String fx:value="buttonInternal" />
+                     </styleClass>
+                     <font>
+                        <Font name="Times New Roman Italic" size="25.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="buttonNumber6" focusTraversable="false" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#buttonNumber6_OnAction" stylesheets="/style/mainWindowStyle.css" text="6" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                     <GridPane.margin>
+                        <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                     </GridPane.margin>
+                     <styleClass>
+                        <String fx:value="buttonAllCalc" />
+                        <String fx:value="buttonInternal" />
+                     </styleClass>
+                     <font>
+                        <Font name="Times New Roman Italic" size="25.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="buttonAdd" focusTraversable="false" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#buttonAddOnAction" text="+" GridPane.columnIndex="3" GridPane.rowIndex="2">
+                     <GridPane.margin>
+                        <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                     </GridPane.margin>
+                     <styleClass>
+                        <String fx:value="buttonAllCalc" />
+                        <String fx:value="buttonExternal" />
+                     </styleClass>
+                     <font>
+                        <Font name="Times New Roman Italic" size="25.0" />
+                     </font></Button>
+                  <Button fx:id="buttonNumber1" focusTraversable="false" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#buttonNumber1_OnAction" stylesheets="/style/mainWindowStyle.css" text="1" GridPane.rowIndex="3">
+                     <GridPane.margin>
+                        <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                     </GridPane.margin>
+                     <styleClass>
+                        <String fx:value="buttonAllCalc" />
+                        <String fx:value="buttonInternal" />
+                     </styleClass>
+                     <font>
+                        <Font name="Times New Roman Italic" size="25.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="buttonNumber2" focusTraversable="false" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#buttonNumber2_OnAction" stylesheets="/style/mainWindowStyle.css" text="2" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                     <GridPane.margin>
+                        <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                     </GridPane.margin>
+                     <styleClass>
+                        <String fx:value="buttonAllCalc" />
+                        <String fx:value="buttonInternal" />
+                     </styleClass>
+                     <font>
+                        <Font name="Times New Roman Italic" size="25.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="buttonNumber3" focusTraversable="false" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#buttonNumber3_OnAction" stylesheets="/style/mainWindowStyle.css" text="3" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                     <GridPane.margin>
+                        <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                     </GridPane.margin>
+                     <styleClass>
+                        <String fx:value="buttonAllCalc" />
+                        <String fx:value="buttonInternal" />
+                     </styleClass>
+                     <font>
+                        <Font name="Times New Roman Italic" size="25.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="buttonRoot" ellipsisString="" focusTraversable="false" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#buttonRootOnAction" stylesheets="/style/mainWindowStyle.css" text="√x" GridPane.columnIndex="3" GridPane.rowIndex="3">
+                     <GridPane.margin>
+                        <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                     </GridPane.margin>
+                     <styleClass>
+                        <String fx:value="buttonAllCalc" />
+                        <String fx:value="buttonExternal" />
+                     </styleClass>
+                     <font>
+                        <Font name="Times New Roman Italic" size="25.0" />
+                     </font></Button>
+                  <Button fx:id="buttonPow" focusTraversable="false" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#buttonPowOnAction" stylesheets="/style/mainWindowStyle.css" text="ₓⁿ" GridPane.rowIndex="4">
+                     <GridPane.margin>
+                        <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                     </GridPane.margin>
+                     <styleClass>
+                        <String fx:value="buttonAllCalc" />
+                        <String fx:value="buttonInternal" />
+                     </styleClass>
+                     <font>
+                        <Font name="Times New Roman Italic" size="30.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="buttonNumber0" focusTraversable="false" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#buttonNumber0_OnAction" stylesheets="/style/mainWindowStyle.css" text="0" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                     <GridPane.margin>
+                        <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                     </GridPane.margin>
+                     <styleClass>
+                        <String fx:value="buttonAllCalc" />
+                        <String fx:value="buttonInternal" />
+                     </styleClass>
+                     <font>
+                        <Font name="Times New Roman Italic" size="25.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="buttonComma" focusTraversable="false" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#buttonCommaOnAction" stylesheets="/style/mainWindowStyle.css" text="," GridPane.columnIndex="2" GridPane.rowIndex="4">
+                     <GridPane.margin>
+                        <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                     </GridPane.margin>
+                     <styleClass>
+                        <String fx:value="buttonAllCalc" />
+                        <String fx:value="buttonInternal" />
+                     </styleClass>
+                     <font>
+                        <Font name="Times New Roman Italic" size="25.0" />
+                     </font>
+                  </Button>
+               </children>
+            </GridPane>
+         </children>
+      </Pane>
+
+
+      <Pane layoutX="7.0" layoutY="57.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="68.0" prefWidth="336.0" styleClass="topPane" stylesheets="/style/mainWindowStyle.css" AnchorPane.leftAnchor="7.0" AnchorPane.rightAnchor="7.0">
+         <children>
+            <TextField fx:id="textField" alignment="CENTER_RIGHT" focusTraversable="false" layoutX="6.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" opacity="0.75" prefHeight="68.0" prefWidth="325.0" styleClass="textField" stylesheets="/style/mainWindowStyle.css">
+               <font>
+                  <Font name="System Italic" size="20.0" />
+               </font>
+            </TextField>
+         </children></Pane>
+      <ImageView fx:id="iconCalc" fitHeight="32.0" fitWidth="32.0" layoutX="14.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="/icon/calculator1.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="iconExite" fitHeight="32.0" fitWidth="32.0" layoutX="304.0" layoutY="8.0" opacity="0.9" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="/icon/exit.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
