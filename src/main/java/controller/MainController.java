@@ -234,7 +234,7 @@ public class MainController {
         if(!textField.getText().isEmpty()) {
             if (pressedOperation) {
                 textField.setText(textField.getText().substring(0,textField.getText().length()-1));
-            } else {
+            }else {
                 if (Double.isNaN(operation.getValue1()))
                     operation.setValue1(Double.parseDouble(textField.getText()));
                 else if (Double.isNaN(operation.getValue2()))
@@ -250,7 +250,7 @@ public class MainController {
                             alert.setContentText("Корень из отрицательного числа!");
                         }
                         alert.showAndWait();
-                        textField.clear();//textField.setText("");
+                        textField.clear();
                     }
                     operation.setValue2(Double.NaN);
                 }
@@ -299,6 +299,10 @@ public class MainController {
                     case "^":
                         ke.consume();
                         buttonPow.fire();
+                        break;
+                    case ".":
+                        ke.consume();
+                        buttonComma.fire();
                         break;
                     case "=":
                     case "\r":
